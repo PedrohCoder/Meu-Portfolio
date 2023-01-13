@@ -1,0 +1,35 @@
+footer {
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em 0;
+
+  display: flex;
+  text-align: left;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  font-family: "Inter", "sans-serif";
+}
+footer img {
+  width: 50px;
+  margin-right: 2em;
+}
+footer p {
+  border-left: 1px solid white;
+  padding: 0 20px;
+}
+@keyframes logo_anim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+footer img:hover {
+  animation-name: logo_anim;
+  animation-duration: 0.8s;
+}

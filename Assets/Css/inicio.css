@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* - Seção de apresentação - */
+
+#home {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  background: linear-gradient(62deg, #012340 50%, #3f618c 50%);
+}
+
+.adjust {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 86.5%;
+}
+.draw-1 {
+  height: 40em;
+  width: auto;
+  margin-right: 9em;
+}
+.draw-1 img {
+  width: 560px;
+}
+.intro-container {
+  margin: auto 1em;
+  padding: 0;
+}
+.intro-container h1 {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 900;
+  font-family: "inter", "sans-serif";
+  margin-bottom: 30px;
+}
+h1 span {
+  font-size: 48px;
+}
+.buttons-adjust {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+.buttons a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.button-text {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 900;
+  font-family: "inter", "sans-serif";
+  padding: 0 0 0 22.9%;
+}
+#git-button img {
+  padding: 10px;
+  width: 140px;
+  border-radius: 50%;
+
+}
+
+#git-button:hover {
+  transition: 0.5s;
+  background-color: #8C2656;
+}
+#git-button:not(:hover) {
+  transition: 0.5s;
+}
+#git-button {
+  border-radius: 75px;
+  padding: 10px 200px 10px 2px;
+  background-color: #f20544;
+  margin-bottom: 2em;
+}
+.buttons ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 58%;
+  justify-content: space-around;
+}
+.others-buttons {
+  align-items: center;
+  border-radius: 75px;
+  padding: 15px 22px;
+  background-color: #f20544;
+}
+.others-buttons img {
+  margin: auto;
+  width: 40px;
+}
+.others-buttons:hover {
+  transition: 0.5s;
+  background-color: #b32c50;
+}
+.others-buttons:not(hover) {
+  transition: 0.5s;
+}
+@media (max-width: 1575px) {
+  .draw-1 {
+    margin: auto;
+  }
+}
+@media (max-width: 1420px) {
+  #home {
+    background: #012340;
+    padding-top: 5em;
+    padding-bottom: 20%;
+  }
+  .intro-container h1 {
+    color: white;
+    /*Text strokes:*/
+    margin-top: -3px;
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px,
+      rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px,
+      rgb(0, 0, 0) 0.705713px 2.91581px 0px,
+      rgb(0, 0, 0) -0.287171px 2.98622px 0px,
+      rgb(0, 0, 0) -1.24844px 2.72789px 0px,
+      rgb(0, 0, 0) -2.07227px 2.16926px 0px,
+      rgb(0, 0, 0) -2.66798px 1.37182px 0px,
+      rgb(0, 0, 0) -2.96998px 0.42336px 0px,
+      rgb(0, 0, 0) -2.94502px -0.571704px 0px,
+      rgb(0, 0, 0) -2.59586px -1.50383px 0px,
+      rgb(0, 0, 0) -1.96093px -2.27041px 0px,
+      rgb(0, 0, 0) -1.11013px -2.78704px 0px,
+      rgb(0, 0, 0) -0.137119px -2.99686px 0px,
+      rgb(0, 0, 0) 0.850987px -2.87677px 0px,
+      rgb(0, 0, 0) 1.74541px -2.43999px 0px,
+      rgb(0, 0, 0) 2.44769px -1.73459px 0px,
+      rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+  }
+
+  .draw-1 {
+    margin: auto;
+    padding-top: 90px;
+  }
+  .adjust {
+    justify-content: center;
+  }
+}
+@media (max-width: 845px) {
+  #home {
+    padding-top: auto;
+    padding-bottom: 1%;
+  }
+  .draw-1 {
+    height: auto;
+  }
+  .draw-1 img {
+    width: 300px;
+    margin-bottom: 0;
+  }
+  .buttons ul {
+    width: 95%;
+  }
+  .button-text {
+    font-size: 48px;
+    padding: 0 0 0 8.9%;
+  }
+  #git-button {
+    padding: 10px 100px 10px 2px;
+  }
+  #git-button img {
+    width: 60px;
+  }
+  .buttons-adjust {
+    justify-content: center;
+  }
+}
+@media (max-width: 675px) {
+  .intro-container h1 {
+    font-size: 40px;
+  }
+  h1 span {
+    font-size: 32px;
+  }
+  .button-text {
+    font-size: 40px;
+    padding: 0 0 0 8.9%;
+  }
+  .buttons img {
+    width: 30px;
+  }
+  .buttons ul {
+    width: 95%;
+  }
+  #git-button {
+    padding: 6px 100px 6px 2px;
+  }
+  #git-button img {
+    width: 60px;
+  }
+}
+
+@media (max-width: 355px) {
+  .intro-container h1 {
+    font-size: 30px;
+  }
+  .button-text {
+    font-size: 30px;
+    padding: 0 0 0 7px;
+  }
+  h1 span {
+    font-size: 25px;
+  }
+  .buttons img {
+    width: 20px;
+  }
+  .buttons ul {
+    width: 95%;
+  }
+  #git-button {
+    padding: 6px 60px 6px 2px;
+  }
+  #git-button img {
+    width: 40px;
+  }
+  .others-buttons {
+    padding: 10px 20px;
+  }
+  .draw-1 img {
+    width: 200px;
+    margin-bottom: 0;
+  }
+}
+
+
+footer{
+  width: 100%;
+  height: 100%;
+}
