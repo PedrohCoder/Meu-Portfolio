@@ -1,2 +1,2 @@
 # Meu Portfolio
- Um site feito por mim mostrando meu portfolio
+ Um site feito por mim mostrando meus serviços e projetos
