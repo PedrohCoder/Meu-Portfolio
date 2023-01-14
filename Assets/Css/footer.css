@@ -10,14 +10,16 @@ footer {
   color: white;
   font-weight: 300;
   letter-spacing: 1.5px;
-  font-size: 16px;
+  font-size: 1.2vh;
   font-family: "Inter", "sans-serif";
 }
 footer img {
   width: 50px;
+  margin-left: 3em;
   margin-right: 2em;
 }
 footer p {
+
   border-left: 1px solid white;
   padding: 0 20px;
 }

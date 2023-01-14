@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #aboutme {
-  height: 110vh;
+  min-height: 110vh;
   display: flex;
   overflow: hidden;
   background: #011826;
@@ -199,4 +199,18 @@
   .aboutme-text p {
     width: 15em;
   }
+}
+@media (max-width: 350px) {
+  .skills ul{
+      width: 100%;
+  }
+.aboutme-draw img {
+  width: 250px;
+}
+.aboutme-text {
+  width: 300px;
+}
+.aboutme-text p {
+  width: 12em;
+}
 }
