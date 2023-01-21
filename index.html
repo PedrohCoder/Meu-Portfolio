@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    
     <title>Portfólio | Pedro Santos</title>
 
     <link rel="stylesheet" href="Assets/Css/menu.css" />
@@ -28,7 +29,10 @@
         margin: 0;
         padding: 0;
       }
+
+
     </style>
+
   </head>
   <body>
     <!-- Menu -->
@@ -44,6 +48,21 @@
           </ul>
         </div>
       </nav>
+      <nav class="navbar hamb">
+      <button class="hamburguer"> 
+          
+        <div class="bar">
+        
+        <div class="mobile-nav">
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#aboutme">Sobre mim</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+          </ul>
+        </div>
+      </div>
+      </button>
+    </nav>
     </header>
     <!-- Apresentation -->
     <section id="home">
@@ -140,11 +159,66 @@
       <div class="side-port">
         <h2>Portfólio</h2>
         <div class="side-btns">
-          <button id="btn-videos">Vídeos</button><br>
-          <button id="btn-dev">Desenvolvedor</button>
+          <button onclick="videos()" id="btn-videos" >Vídeos</button><br>
+          <button onclick="dev()" id="btn-dev" >Desenvolvedor</button>
         </div>
       </div>
       <div class="port-itens">
+        <div class="videos">
+          <a href="https://www.youtube.com/watch?v=Q9Cfisbu1c8" target="_blank" rel="external" id="video1"><img src="Assets/Img/Thumbnails/videos/musicvideo-thumb1.jpg" alt="cover"></a>
+
+          <a href="https://www.youtube.com/watch?v=DOqNep7F4m4&t=1s" target="_blank" rel="external" id="video2"><img src="Assets/Img/Thumbnails/videos/leozeradev-thumb1.jpg" alt="img"></a>
+
+          <a href="https://www.youtube.com/watch?v=Oulq0AlNpKQ&t=67s" target="_blank" rel="external" id="video3"><img src="Assets/Img/Thumbnails/videos/leozeradev-thumb2.jpg" alt="cover"></a>
+
+          <a href="https://www.youtube.com/watch?v=5aIRHcqdKwE&t=33s" target="_blank" rel="external" id="video4"><img src="Assets/Img/Thumbnails/videos/leozeradev-thumb3.jpg" alt="cover"></a>
+
+
+        </div>
+        <div class="dev">
+          <a href="https://github.com/PedoroSantos/MyFirstMobileGame" target="_blank" rel="external" id="dev1">
+            <div class="cover-button">
+              <div class="cover-image">
+              <img src="Assets/Img/Thumbnails/dev/webmanagertycoonbanner.webp" alt="cover">
+              <div class="cover-background">
+                <class class="cover-text"><strong> Web manager Tycoon</strong><br><span style="font-size:24px;">Mobile game</span></span>
+                </div> 
+            </div>
+            </div>
+          </a>
+
+          <a href="#" target="_blank" rel="external" id="dev2">            
+            <div class="cover-button">
+              <div class="cover-image">
+              <img src="Assets/Img/comingsoon.png" alt="cover">
+              <div class="cover-background">
+                <class class="cover-text"><strong> Em breve...</strong><br><span style="font-size:24px;"></span></span>
+                </div> 
+              </div>
+            </div>
+          </a>
+
+          <a href="#" target="_blank" rel="external" id="dev2">            
+            <div class="cover-button">
+              <div class="cover-image">
+              <img src="Assets/Img/comingsoon.png" alt="cover">
+              <div class="cover-background">
+                <class class="cover-text"><strong> Em breve...</strong><br><span style="font-size:24px;"></span></span>
+                </div> 
+              </div>
+            </div>
+          </a>
+
+          <a href="#" target="_blank" rel="external" id="dev2">            
+            <div class="cover-button">
+              <div class="cover-image">
+              <img src="Assets/Img/comingsoon.png" alt="cover">
+              <div class="cover-background">
+                <class class="cover-text"><strong> Em breve...</strong><br><span style="font-size:24px;"></span></span>
+                </div> 
+              </div>
+            </div>
+          </a>
         
       </div>
     </div>
@@ -157,5 +231,7 @@
         Email para contato: Pedrohsssan@gmail.com
       </p>
     </footer>
+    <!--Scripts-->
+    <script src="Assets/Js/app.js"></script> 
   </body>
 </html>

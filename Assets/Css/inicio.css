@@ -104,12 +104,18 @@ h1 span {
 .others-buttons:not(hover) {
   transition: 0.5s;
 }
-@media (max-width: 1575px) {
+@media (max-width: 1590px) {
   .draw-1 {
     margin: auto;
   }
+  .draw-1 img{
+    width: 559px;
+  }
 }
-@media (max-width: 1420px) {
+@media (max-width: 1422px) {
+  .draw-1 img{
+    width: 560px;
+  }
   #home {
     background: #012340;
     padding-top: 5em;

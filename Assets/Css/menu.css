@@ -20,6 +20,34 @@ header {
   justify-content: center;
   align-items: center;
 }
+.hamburguer
+{
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+
+}
+
+.hamburguer::after{
+  content:'≡';
+  position: fixed;
+  z-index: 2;
+  top: 2rem;
+  right: 2rem;
+  color: white;
+  font-size:3.5rem;
+  line-height: 1rem;
+  text-align: center;
+  transition: 0.5s;
+}
+.hamburguer.active::after
+{
+  font-size:3.3rem;
+  content:'✕';
+
+
+}
 .navbar img {
   width: 63px;
   padding-top: 5px;
@@ -28,7 +56,7 @@ header {
   margin-left: auto;
   margin-right: 3em;
 }
-.navbar ul {
+.navbar-left ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -36,10 +64,47 @@ header {
   width: 150%;
   justify-content: space-around;
 }
-.navbar li {
-  display: inline;
+.navbar-left li {
+
   font-family: "Inter", sans-serif;
   text-align: center;
+  display: none;
+}
+.hamb{
+  display: flex;
+  position: absolute;
+  left: 10px;
+  bottom: .2rem;
+  height: 4.3rem;
+  width: 100%;
+  justify-content: center;
+}
+.bar{
+  background: rgb(11, 24, 36);
+  margin: 0;
+  width: 100vh;
+
+}
+.mobile-nav ul {
+  z-index: 30;
+  padding: 30px 0;
+  margin: 0;
+  margin-top: 20rem;
+  margin-right: 2em;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+
+}
+.mobile-nav li {
+  margin-bottom: 2rem;
+  font-family: "Inter", sans-serif;
+  text-align: right;
+  display: inline;
+}
+.active ul{
+  display: flex;
 }
 .navbar a {
   color: #ffff;
@@ -63,4 +128,16 @@ header {
 footer{
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .hamburguer{
+    display:none;
+  } 
+  .navbar-left li{
+    display: inline;
+  }
+  .hamb{
+    display: none;
+  }
 }
