@@ -207,10 +207,15 @@ h1 #title-anim::after{
   }
 }
 @media (max-width: 675px) {
+  h1 #title-anim::after{
+
+    font-size: 32px;
+
+  }
   .intro-container h1 {
     font-size: 40px;
   }
-  h1 span {
+  h1 #sub-title {
     font-size: 32px;
   }
   .button-text {
@@ -232,6 +237,11 @@ h1 #title-anim::after{
 }
 
 @media (max-width: 355px) {
+  h1 #title-anim::after{
+
+    font-size: 24px;
+
+  }
   .intro-container h1 {
     font-size: 30px;
   }
@@ -239,7 +249,7 @@ h1 #title-anim::after{
     font-size: 30px;
     padding: 0 0 0 7px;
   }
-  h1 span {
+  h1 #sub-title {
     font-size: 25px;
   }
   .buttons img {
