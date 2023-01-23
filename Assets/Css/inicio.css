@@ -37,9 +37,34 @@
   font-family: "inter", "sans-serif";
   margin-bottom: 30px;
 }
-h1 span {
+h1 #sub-title {
   font-size: 48px;
 }
+
+@keyframes titlepointer {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 100;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+h1 #title-anim::after{
+  opacity: 0;
+  content: '|';
+  color: white;
+  font-size: 48px;
+  font-weight: 400;
+  animation-name: titlepointer;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+
 .buttons-adjust {
   padding: 0 20px;
   display: flex;

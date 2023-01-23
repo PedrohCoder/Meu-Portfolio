@@ -1,13 +1,52 @@
+//#region Animação de titulo
+const title = document.querySelector("#title-anim");
+
+function typing(text, count) {
+  if (count < text.length) {
+    setTimeout(() => { //a cada um tanto tempo 
+      title.textContent += text.charAt(count); //adicionando um carácter ao titulo referente ao texto
+      count++; // quantidade de letras do texto
+      typing(text, count); //chamando a função novamente para fazer um loop até o texto ser terminado
+    }, 120);
+  }
+}
+setTimeout(function()
+{
+  typing("Pedro Henrique", 0);
+}, 2500);
+
+
+//#endregion
+
+//#region transições
+const targets = document.querySelectorAll("[data-anim]");
+const animclass = "animate";
+
+function anim_scroll() {
+  const windowtop = window.pageYOffset + (window.innerHeight * 3) / 4;
+  targets.forEach(function (element) {
+    if (windowtop > element.offsetTop) {
+      element.classList.add(animclass);
+    } else {
+      element.classList.remove(animclass);
+    }
+  });
+}
+
+if (targets.length) {
+  window.addEventListener("scroll", anim_scroll);
+}
+
+//#endregion
+
 //#region navbar menu
 
+const hamburguer = document.querySelector("button.hamburguer");
+hamburguer.addEventListener("click", hambopen);
+function hambopen() {
+  hamburguer.classList.toggle("active");
+}
 
-
-  const hamburguer = document.querySelector("button.hamburguer");
-  hamburguer.addEventListener("click", hambopen);
-  function hambopen() {
-    hamburguer.classList.toggle("active");
-  }
-    
 //#endregion
 
 //#region Portfólio

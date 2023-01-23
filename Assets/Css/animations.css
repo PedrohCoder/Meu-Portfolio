@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+[data-anim = "fade"]{
+
+    opacity: 0;
+    transition: 0.8s;
+}
+[data-anim = "left"]{
+
+    opacity: 0;
+    transform: translate3d(-90px, 0px, 0px);
+    transition: 0.8s;
+}
+[data-anim = "bottom"]{
+
+    opacity: 0;
+    transform: translate3d(0px, 180px, 0px);
+    transition: 0.8s;
+}
+.animate{
+
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}

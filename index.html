@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="Assets/Css/sobremim.css" />
     <link rel="stylesheet" href="Assets/Css/portfolio.css" />
     <link rel="stylesheet" href="Assets/Css/footer.css" />
+    <link rel="stylesheet" href="Assets/Css/animations.css">
 
     <link rel="shortcut icon" href="Assets/Img/Logo.svg" type="image/x-icon">
 
@@ -30,11 +31,11 @@
         padding: 0;
       }
       html body{
-       width: 100%;
+        width: 100%;
         margin: 0; 
-      padding: 0;
-    overflow-x: hidden;
-}
+        padding: 0;
+        overflow-x: hidden;
+      }
 
 
     </style>
@@ -78,8 +79,8 @@
         </div>
         <div class="intro-container">
           <h1>
-            <span>Olá eu sou,</span><br />
-            Pedro Henrique
+            <span id="sub-title">Olá eu sou,</span><br />
+            <span id="title-anim"></span>
           </h1>
           <div class="buttons-adjust">
             <div class="buttons">
@@ -129,10 +130,10 @@
     <!--About me-->
     <section id="aboutme">
       <div class="aboutme-adjust">
-        <div class="aboutme-draw">
+        <div class="aboutme-draw" data-anim="left">
           <img src="Assets/Img/character2.png" alt="draw-2" />
         </div>
-        <article class="aboutme-text">
+        <article class="aboutme-text" data-anim="fade">
           <h2>Sobre mim</h2>
           <hr />
           <p>
@@ -162,14 +163,14 @@
     <section id="portfolio">
       <div class="port-content">
 
-      <div class="side-port">
-        <h2>Portfólio</h2>
-        <div class="side-btns">
+      <div class="side-port" >
+        <h2 data-anim="bottom">Portfólio</h2>
+        <div class="side-btns" data-anim="bottom">
           <button onclick="videos()" id="btn-videos" >Vídeos</button><br>
           <button onclick="dev()" id="btn-dev" >Desenvolvedor</button>
         </div>
       </div>
-      <div class="port-itens">
+      <div class="port-itens" data-anim="bottom">
         <div class="videos">
           <a href="https://www.youtube.com/watch?v=Q9Cfisbu1c8" target="_blank" rel="external" id="video1"><img src="Assets/Img/Thumbnails/videos/musicvideo-thumb1.jpg" alt="cover"></a>
 
